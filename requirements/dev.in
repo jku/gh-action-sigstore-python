@@ -3,3 +3,4 @@ isort
 black
 mypy
 types-requests
+-r main.in
