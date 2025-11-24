@@ -24,6 +24,6 @@ else
 fi
 
 
-. "$BIN/activate" && pip install uv && uv venv --clear "$ENV" && VIRTUAL_ENV="$ENV" uv pip install uv
+. "$BIN/activate" && pip install uv && uv venv --no-config --clear "$ENV" && VIRTUAL_ENV="$ENV" uv pip install uv
 touch "$ENV/bootstrap"
 rm -r "$BOOTSTRAP_ENV"
